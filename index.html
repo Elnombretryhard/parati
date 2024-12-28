@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        .back {
+
+            position: fixed;
+            padding: 0;
+            margin: 0;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: white;
+            animation-name: backdiv;
+            animation-duration: 3500ms;
+            animation-iteration-count: infinite;
+            height: 100vh;
+        }
+
+        .heart {
+            position: absolute;
+            margin: auto;
+            top: 170px;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background-color: rgb(233, 5, 5);
+            height: 150px;
+            width: 150px;
+            transform: rotate(-45deg);
+            animation-name: beat;
+            animation-duration: 3500ms;
+            animation-iteration-count: infinite;
+        }
+
+        .heart:after {
+            background-color: rgb(180, 6, 6);
+            content: "";
+            border-radius: 50%;
+            position: absolute;
+            width: 150px;
+            height: 150px;
+            top: 0;
+            left: 80px;
+        }
+
+        .heart:before {
+            background-color: rgb(236, 4, 4);
+            content: "";
+            border-radius: 50%;
+            position: absolute;
+            width: 150px;
+            height: 150px;
+            top: -80px;
+            left: 0;
+        }
+
+        @keyframes backdiv {
+            50% {
+                background: #ff0000fd;
+            }
+        }
+
+        @keyframes beat {
+            0% {
+                transform: scale(1) rotate(-45deg);
+            }
+
+            50% {
+                transform: scale(0.6) rotate(-45deg);
+            }
+        }
+
+        .bday {
+            text-align: center;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+            font-size: 15px;
+            font-family: 'Nunito', sans-serif;
+            font-weight: 600;
+            color: #0e2804;
+            margin: 20px auto;
+            padding: 15px;
+            background-color: #e43327;
+        }
+
+        button {
+            background-color: rgb(243, 219, 7);
+            display: block; 
+            margin: 20px auto; 
+            padding: 10px 20px; 
+            color: white; 
+            border: none;
+            margin-top: 70vh;
+             
+        }
+        a{
+            color: black;
+            font-weight: 20px;
+            text-decoration: none;
+        }
+
+        .elements {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+           
+        }
+    </style>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap" rel="stylesheet">
+    <title>Natalia jimenez</title>
+</head>
+<body>
+    <div class="back">
+        <div class="bday">Hola amor de mi vida<br>Con cada latido de mi corazón, te amo más. Eres la obra de arte más hermosa que mis ojos han contemplado, una mujer gigante en espíritu y en mi vida. Estos cuatro meses a tu lado han sido el capítulo más maravilloso de mi historia, una sinfonía de emociones que resuena con cada fibra de mi ser.
+            Eres mi vida, Natalia. Te has convertido en la pieza fundamental que sostiene mi mundo, mi confidente, mi cómplice. Cada instante contigo es una experiencia única, un nuevo amanecer que ilumina mi alma. No puedo concebir un solo momento sin tu presencia, sin tu sonrisa que irradia luz en mi vida.</div>
+        
+        <div class="elements">
+            <div class="heart"></div>
+            <footer>
+                <div class="boton">
+                    <button><a href="xd3.html"><span>Una florecita para ti</span></a></button>
+                </div>
+            </footer>
+        </div>
+       
+    </div>
+    
+</body>
+</html>
